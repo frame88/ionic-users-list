@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user-data',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserDataPage implements OnInit {
 
-  constructor() { }
+  public userId = 0;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.userId = this.route.snapshot.params['id'];
   }
 
 }
