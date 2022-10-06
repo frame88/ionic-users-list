@@ -13,6 +13,9 @@ export class UserDetailComponent implements OnInit {
   ngOnInit() {}
 
   goBack( evt ) {
-    this.router.navigate(['users']);
+    //this.router.navigate(['users']);
+
+    //metodo equivalente a quello sopra
+    this.router.navigateByUrl('users');
   }
 }
