@@ -1,3 +1,15 @@
-<p>
-  user-detail works!
-</p>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- <ion-back-button></ion-back-button> bottone per tornare indietro -->
+        <ion-button (click)="goBack($event)"> <!-- tramite questo metodo posso tornare indietro pur non essendo in un module -->
+        <ion-icon name="arrow-back-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>User's detail</h1>
+</ion-content>

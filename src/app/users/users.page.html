@@ -7,10 +7,9 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let user of users; let id = index"
-    detail
-    [routerLink]="[id, 'detail']" >
+      detail = 'true' [routerLink]="[id, 'detail']">
       <ion-avatar slot="start">
-        <img alt="user icon" [src]="user.picture.thumbnail" />
+        <img alt="user icon" [src]="user.picture.thumbnail">
       </ion-avatar>
       <ion-label>
         <h2>{{ user.name.title }} {{ user.name.first }} {{ user.name.last }}</h2>
