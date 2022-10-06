@@ -14,7 +14,7 @@ export class UserDetailComponent implements OnInit {
 
   goBack( evt ) {
     //this.router.navigate(['users']);
-
+    
     //metodo equivalente a quello sopra
     this.router.navigateByUrl('users');
   }
