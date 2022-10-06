@@ -1,12 +1,25 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="users"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <h1>Users {{ userId }} </h1>
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button  defaultHref="users"></ion-back-button>
+      <ion-back-button text="Indietro" [icon]="buttonIcon">
+      </ion-back-button>
     </ion-buttons>
-    <ion-title><h1>Users {{ userId }} </h1></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis harum delectus, expedita maiores quaerat tenetur rerum adipisci labore numquam nesciunt quasi sint deserunt hic aliquam dolorem debitis quam beatae est?</p>
+  <h1 class="ion-padding">Users {{ userId }} </h1>
+  <p class="ion-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis harum delectus, expedita maiores quaerat tenetur rerum adipisci labore numquam nesciunt quasi sint deserunt hic aliquam dolorem debitis quam beatae est?</p>
+  <p class="ion-padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis harum delectus, expedita maiores quaerat tenetur rerum adipisci?</p>
 </ion-content>
